@@ -5,28 +5,46 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    int i; // variável de controle
+    int movimentos; //contador 
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //Movimento da torre utilizando for
+    printf("Movimento da Torre:\n\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //inicia com i = 0
+    //executa até i for menor que 5
+    //incremente o valor de i a cada execução (i++)
+    for (i = 0; i < 5; i++) {
+        printf("direita\n");
+    }
+    
+printf("\n"); //pula a linha para melhor leitura do código
+    
+    //Movimento do bisto utilizando while
+    printf("Movimento do Bispo:\n\n");
+    
+    movimentos = 0; //inicia a variavel de contagem dos movimentos
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // - Continua repetindo enquanto 'movimentos' for menor que 5
+    while(movimentos < 5) {
+        printf("Cima Direita\n");
+        movimentos++; //incrementa o printf com o valor de movimentos
+    }
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+printf("\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //Movimento da rainha utilizando do-while
+    printf("Movimento da rainha:\n\n");
 
-    return 0;
+    movimentos = 0; //reinicia a variavel de contagem dos movimentos
+    
+    do {
+        printf("Esquerda\n");
+        movimentos++; //incrementa o printf com a quantidade de movimentos
+    }
+
+    while (movimentos < 8); // Condição para continuar repetindo enquanto movimentos for menor que 8
+
+    return 0; //retorna 0 idicando que o programa finalizou
 }
